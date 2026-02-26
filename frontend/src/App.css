@@ -1,0 +1,77 @@
+:root {
+  --bg: #0c0b0a;
+  --panel: #1f1a14;
+  --panel2: #262018;
+  --gold: #c9a86a;
+  --text: #f5e6c8;
+  --muted: #cbbfa8;
+  --accent: #d2b57c;
+  --danger: #d9534f;
+  --ok: #4cd964;
+  --header-h: 58px;
+  --input-h: 120px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+  background: linear-gradient(180deg, #0c0b0a, #17120e 60%, #0c0b0a);
+  color: var(--text);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.app-header {
+  background: #20160c;
+  border-bottom: 2px solid var(--gold);
+  padding: 12px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(18px, 2.2vw, 24px);
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+  height: var(--header-h);
+}
+
+.app-main {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(38, 32, 24, 0.95), rgba(23, 18, 14, 0.95));
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  box-shadow: 0 0 18px #000;
+}
+
+.hint-text {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #3a2f1d;
+  margin: 8px 0;
+}

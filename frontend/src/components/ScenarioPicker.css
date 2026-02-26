@@ -1,0 +1,116 @@
+.scenario-screen {
+  padding: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.scenario-panel {
+  padding: 16px;
+}
+
+.scenario-panel h2 {
+  margin: 0 0 10px;
+  font-size: clamp(18px, 2.6vw, 22px);
+}
+
+.scenario-panel .hint {
+  margin-bottom: 16px;
+}
+
+.scenario-panel .hint strong {
+  color: var(--accent);
+}
+
+.scenario-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.scenario-card {
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.scenario-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.scenario-cover {
+  width: 100%;
+  /* height: 260px; */
+  overflow: hidden;
+  background: var(--panel2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scenario-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.scenario-card:hover .scenario-cover img {
+  transform: scale(1.05);
+}
+
+.scenario-content {
+  padding: 14px;
+  flex: 1;
+}
+
+.scenario-card h3 {
+  margin: 0 0 6px;
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--gold);
+}
+
+.difficulty-badge {
+  display: block;
+  width: fit-content;
+  padding: 3px 10px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 140, 0, 0.15));
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--gold);
+  margin: 6px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.tag {
+  display: block;
+  width: fit-content;
+  padding: 2px 8px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 6px 0;
+}
+
+.scenario-card .small {
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .scenario-grid {
+    grid-template-columns: 1fr;
+  }
+}

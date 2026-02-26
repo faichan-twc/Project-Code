@@ -1,0 +1,956 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<title>FABLE — 中文 NLP 冒險（RWD 原型 / 位置修正）</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<style>
+  :root{
+    --bg:#0c0b0a; --panel:#1f1a14; --panel2:#262018; --gold:#c9a86a;
+    --text:#f5e6c8; --muted:#cbbfa8; --accent:#d2b57c; --danger:#d9534f; --ok:#4cd964;
+    --header-h:58px; --input-h:72px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; font-family:"Noto Serif TC","PingFang TC","Microsoft JhengHei",serif;
+    background:linear-gradient(180deg,#0c0b0a,#17120e 60%,#0c0b0a);
+    color:var(--text);
+    min-height:100dvh;
+  }
+  header{
+    background:#20160c; border-bottom:2px solid var(--gold);
+    padding:12px 16px; text-align:center; font-weight:700;
+    font-size:clamp(18px,2.2vw,24px); letter-spacing:.5px;
+  }
+
+  .page{padding:16px}
+  .panel{
+    background:linear-gradient(180deg,rgba(38,32,24,.95),rgba(23,18,14,.95));
+    border:1px solid var(--gold); border-radius:10px; box-shadow:0 0 18px #000;
+  }
+  .small{font-size:12px; color:var(--muted)}
+
+  /* Scenario Picker */
+  #scenario-screen .grid{
+    display:grid; gap:16px; grid-template-columns:repeat(3,minmax(220px,1fr));
+  }
+  .card{cursor:pointer; padding:14px; transition:.2s; border-radius:10px}
+  .card:hover{transform:translateY(-3px); box-shadow:0 6px 20px rgba(0,0,0,.45)}
+  .card h3{margin:10px 0 6px; font-size:clamp(16px,2vw,20px)}
+  .tag{display:inline-block; padding:2px 8px; border:1px solid var(--gold);
+       border-radius:999px; font-size:12px; color:var(--muted)}
+
+  /* Game Layout */
+  #game-screen{
+    display:none; /* 初始完全隱藏，未選場景不顯示 */
+    min-height:calc(100dvh - var(--header-h));
+    gap:14px; padding:14px;
+    display:grid; grid-template-columns:2fr 1fr;
+  }
+  #left{display:flex; flex-direction:column; gap:10px; min-width:0}
+  #right{display:flex; flex-direction:column; gap:10px; min-width:0}
+
+  /* 位置修正：當前地點列移到左欄最上方 */
+  #location-bar { position: sticky; top: 0; z-index: 5; }
+  #location-bar .row{display:flex; align-items:center; justify-content:space-between; gap:8px}
+  #story{flex:1; overflow:auto; padding:14px; padding-bottom:calc(var(--input-h) + 12px);}
+  .story-block{background:var(--panel2); border-left:4px solid var(--accent);
+               padding:10px 12px; margin-bottom:10px; line-height:1.55; font-size:clamp(14px,1.8vw,16px)}
+  .sys{opacity:.85; font-style:italic}
+  .player{border-color:#7db8ff}
+  .enemy{border-color:#ff8a7d}
+
+  .section{padding:12px 14px;}
+  .row-small{display:flex; align-items:center; justify-content:space-between; gap:8px}
+  .bar{height:18px; background:#513428; border:2px solid var(--gold); border-radius:8px; overflow:hidden}
+  .fill{height:100%; width:100%; background:var(--danger); transition:width .35s}
+  .efill{height:100%; width:100%; background:#c55; transition:width .35s}
+  .chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:6px}
+  .chip{border:1px solid var(--gold); padding:2px 8px; border-radius:999px; font-size:12px; color:var(--muted)}
+
+  /* Input Bar（固定在底部；初始隱藏） */
+  #input-bar{
+    position:fixed; left:0; right:0; bottom:0;
+    display:none; gap:8px; align-items:center; 
+    padding:10px; padding-bottom:calc(10px + env(safe-area-inset-bottom));
+    background:#1b150f; border-top:1px solid var(--gold);
+    z-index:20;
+  }
+  #cmd{
+    flex:1; padding:12px; border-radius:8px; border:2px solid var(--gold);
+    background:#302416; color:var(--text);
+    font-size:clamp(14px,2.4vw,16px);
+  }
+  .btn{
+    padding:12px 14px; border:none; border-radius:8px; cursor:pointer;
+    background:var(--accent); color:#1a1209; font-weight:700; 
+    font-size:clamp(14px,2.6vw,16px); min-width:44px; min-height:44px;
+  }
+  .btn.ghost{background:transparent; color:var(--text); border:1px solid var(--gold)}
+  #quick{display:flex; gap:8px; flex-wrap:wrap}
+
+  /* RWD */
+  @media (max-width:1024px){
+    #scenario-screen .grid{ grid-template-columns:repeat(2,1fr); }
+    #game-screen{ grid-template-columns:1fr; }
+  }
+  @media (max-width:640px){
+    #scenario-screen .grid{ grid-template-columns:1fr; }
+    header{ font-size:clamp(16px,4.8vw,20px); }
+    .page{ padding:12px; }
+    #game-screen{ padding:10px; gap:10px; }
+    .section{ padding:10px 12px; }
+  }
+</style>
+</head>
+<body>
+<header>FABLE — 中文 NLP 文字冒險（RWD 原型 / 位置修正）</header>
+
+<!-- =============== Scenario Picker（初始顯示） =============== -->
+<div id="scenario-screen" class="page">
+  <div class="panel" style="padding:16px">
+    <h2 style="margin:0 0 10px; font-size:clamp(18px,2.6vw,22px)">選擇你的冒險</h2>
+    <p class="small">建議指令：<b>攻擊狼、觀察四周、拾取寶石、使用治療藥水、前往神殿、休息、與神秘人說話</b></p>
+    <div class="grid">
+      <div class="card panel" onclick="Game.start('forest')">
+        <h3>迷霧森林</h3>
+        <div class="tag">陰影、野獸、古老低語</div>
+        <p class="small">薄霧纏繞古木，遠處傳來低沉的嚎叫。</p>
+      </div>
+      <div class="card panel" onclick="Game.start('desert')">
+        <h3>低語之沙</h3>
+        <div class="tag">沙塵、亡魂、海市蜃樓</div>
+        <p class="small">風沙像在耳邊絮語，沙丘下埋著誰的記憶？</p>
+      </div>
+      <div class="card panel" onclick="Game.start('ruins')">
+        <h3>遺忘之城</h3>
+        <div class="tag">古城、機關、失落王庭</div>
+        <p class="small">殘垣斷壁間，石像似乎在偷偷張望。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============== Game Screen（選好場景先顯示） =============== -->
+<div id="game-screen">
+  <div id="left">
+    <!-- 當前地點：移到主畫面上方（位置修正） -->
+    <div id="location-bar" class="panel">
+      <div class="row">
+        <div><b>當前地點：</b><span id="loc">—</span></div>
+        <div class="small">提示：試「觀察四周」「攻擊狼」</div>
+      </div>
+    </div>
+
+    <!-- 故事區 -->
+    <div id="story" class="panel"></div>
+  </div>
+
+  <div id="right">
+    <!-- Player -->
+    <div class="panel section">
+      <h3 style="margin:0 0 8px">玩家狀態</h3>
+      <div class="row-small"><span>生命值</span><span id="hpText">100 / 100</span></div>
+      <div class="bar"><div id="hpBar" class="fill"></div></div>
+      <div class="chips" id="playerBuffs"></div>
+      <hr style="border-color:#3a2f1d">
+      <h4 style="margin:6px 0">背包</h4>
+      <div id="inv"></div>
+    </div>
+    <!-- Enemy -->
+    <div class="panel section">
+      <h3 style="margin:0 0 8px; display:flex; align-items:center; gap:8px">
+        敵人 <span id="enemyName" class="small">（無）</span>
+      </h3>
+      <div class="row-small"><span>敵人生命</span><span id="ehpText">—</span></div>
+      <div class="bar"><div id="ehpBar" class="efill" style="width:0%"></div></div>
+      <div class="chips" id="enemyBuffs"></div>
+      <div id="enemyHint" class="small" style="margin-top:6px"></div>
+    </div>
+	<!-- 右側任務面板（貼在你的 #right 裡、敵人面板之後） -->
+	<div class="panel section" id="quest-panel">
+	  <h3 style="margin:0 0 8px">任務</h3>
+	  <div id="quest-list" class="small">（尚未有任務）</div>
+	</div>
+  </div>
+</div>
+
+<!-- =============== Input Bar（選好場景先顯示） =============== -->
+<div id="input-bar">
+  <input id="cmd" placeholder="輸入你的行動，例如：攻擊狼／使用治療藥水／觀察四周／前往神殿…" />
+  <button class="btn" onclick="UI.onSend()">送出</button>
+  <div id="quick">
+    <button class="btn ghost" onclick="UI.quick('觀察四周')">觀察</button>
+    <button class="btn ghost" onclick="UI.quick('防禦')">防禦</button>
+    <button class="btn ghost" onclick="UI.quick('休息')">休息</button>
+  </div>
+</div>
+
+<script>
+/* ==================（以下程式碼沿用你功能，僅位置/顯示控制已修正）================== */
+const Data = {
+  items: {
+    "火把": {stack:false, desc:"照亮黑暗的舊火把。"},
+    "舊地圖": {stack:false, desc:"殘破的地圖，標示著某個神殿。"},
+    "治療藥水": {stack:true, heal:30, desc:"回復 30 生命。"},
+    "神秘寶石": {stack:true, desc:"散發微光的寶石，似乎有反應。"},
+    "狼牙": {stack:true, desc:"影牙狼的尖利獠牙。"}
+  },
+  enemies: {
+    wolf: {
+      name:"影牙狼", maxhp: 45, baseAtk: 10,
+      ai: "wolfAI",
+      skills: {
+        bite: {name:"撕咬", dmg:[8,14]},
+        howl: {name:"號召嚎叫", buff:{critUp:2}, cd:3},
+        pounce: {name:"撲擊", dmg:[14,20], cd:3, req:(s)=>!s.player.defending}
+      }
+    },
+    wraith: {
+      name:"沙怨靈", maxhp: 60, baseAtk: 8,
+      ai: "wraithAI",
+      skills: {
+        drain: {name:"沙靈汲取", dmg:[10,14], lifesteal:0.5, cd:2},
+        veil:  {name:"流沙帷幕", buff:{evasion:0.25}, cd:3},
+        wail:  {name:"荒嘯", stun:1, cd:4}
+      }
+    }
+  },
+  scenarios: {
+    forest: {
+      name:"迷霧森林",
+      opening:"你踏入迷霧森林，薄霧在樹根間蠢動。",
+      locations:["林徑","倒木","古井","神殿外廊"],
+      spawn:["wolf","wolf","wolf","wraith"]
+    },
+    desert: {
+      name:"低語之沙",
+      opening:"熱風灼面，遠方海市蜃樓若隱若現。",
+      locations:["沙丘","破帳篷","石柱圈","埋沙神殿"],
+      spawn:["wraith","wraith","wolf","wraith"]
+    },
+    ruins: {
+      name:"遺忘之城",
+      opening:"崩落的拱門在陰影中靜默矗立。",
+      locations:["外庭","浮雕廊","鐘塔底","王座廳"],
+      spawn:["wolf","wraith","wraith","wolf"]
+    }
+  },
+  synonyms: {
+    attack:["攻擊","打","斬","砍","刺","射","揍","劈","殺"],
+    defend:["防禦","防守","格擋","架勢"],
+    observe:["觀察","查看","察看","檢視","看","調查","四處看看","四周"],
+    talk:["說話","對話","交談","問","詢問"],
+    pick:["拾取","撿","拿","拿起","取得","撿起","收集","獲得"],
+    use:["使用","用","喝","吃","服用"],
+    move:["前往","走到","去","移動","進入","趕往"],
+    rest:["休息","睡覺","療傷","打坐","冥想"],
+    save:["存檔","儲存","保存"],
+    load:["讀檔","載入","加載"]
+  },
+  lexicon: {
+    enemies:["狼","影牙狼","沙怨靈"],
+    items:["火把","舊地圖","治療藥水","神秘寶石","狼牙","鑰匙"],
+    locations:["森林","林徑","古井","神殿","外廊","沙丘","廢墟","王座廳","石柱圈"]
+  }
+};
+
+const State = {
+  scenario:null,
+  location:"—",
+  player:{
+    hp:100, maxhp:100,
+    defending:false, buffs:{critUp:0,evade:0}, stun:0,
+    inventory:[{name:"火把",qty:1},{name:"舊地圖",qty:1},{name:"治療藥水",qty:1}]
+  },
+  enemy:null
+};
+
+const UI = {
+  el:{
+    scenario:document.getElementById('scenario-screen'),
+    game:document.getElementById('game-screen'),
+    story:document.getElementById('story'),
+    inputBar:document.getElementById('input-bar'),
+    cmd:document.getElementById('cmd'),
+    loc:document.getElementById('loc'),
+    hpText:document.getElementById('hpText'),
+    hpBar:document.getElementById('hpBar'),
+    inv:document.getElementById('inv'),
+    eName:document.getElementById('enemyName'),
+    ehpText:document.getElementById('ehpText'),
+    ehpBar:document.getElementById('ehpBar'),
+    pBuffs:document.getElementById('playerBuffs'),
+    eBuffs:document.getElementById('enemyBuffs'),
+    eHint:document.getElementById('enemyHint'),
+  },
+  say(text, cls=""){ const d=document.createElement('div'); d.className="story-block "+cls; d.textContent=text; UI.el.story.appendChild(d); UI.el.story.scrollTop=UI.el.story.scrollHeight; },
+  sys(text){ UI.say(text,"sys"); },
+  me(text){ UI.say("你："+text,"player"); },
+  foe(text){ UI.say("敵人："+text,"enemy"); },
+  refresh(){
+    UI.el.loc.textContent = State.location;
+    UI.el.hpText.textContent = `${State.player.hp} / ${State.player.maxhp}`;
+    UI.el.hpBar.style.width = Math.max(0, State.player.hp)/State.player.maxhp*100 + "%";
+    UI.el.pBuffs.innerHTML="";
+    if(State.player.defending) UI.badge(UI.el.pBuffs,"防禦姿態");
+    if(State.player.buffs.critUp>0) UI.badge(UI.el.pBuffs,`會心+${State.player.buffs.critUp}`);
+    if(State.player.buffs.evade>0) UI.badge(UI.el.pBuffs,`閃避+${Math.round(State.player.buffs.evade*100)}%`);
+    if(State.player.stun>0) UI.badge(UI.el.pBuffs,`暈眩 ${State.player.stun}回合`);
+    UI.el.inv.innerHTML = State.player.inventory.map(it=>`• ${it.name} × ${it.qty}`).join("<br>");
+    if(State.enemy){
+      UI.el.eName.textContent = State.enemy.name;
+      UI.el.ehpText.textContent = `${State.enemy.hp} / ${State.enemy.maxhp}`;
+      UI.el.ehpBar.style.width = Math.max(0,State.enemy.hp)/State.enemy.maxhp*100 + "%";
+      UI.el.eBuffs.innerHTML="";
+      if(State.enemy.stun>0) UI.badge(UI.el.eBuffs,`暈眩 ${State.enemy.stun}回合`);
+      if(State.enemy.buffs.evasion>0) UI.badge(UI.el.eBuffs,`閃避+${Math.round(State.enemy.buffs.evasion*100)}%`);
+      if(State.enemy.buffs.enrage) UI.badge(UI.el.eBuffs,`狂暴`);
+      if(State.enemy.buffs.critUp>0) UI.badge(UI.el.eBuffs,`會心+${State.enemy.buffs.critUp}`);
+      UI.el.eHint.textContent = State.enemy.hint || "";
+    }else{
+      UI.el.eName.textContent="（無）";
+      UI.el.ehpText.textContent="—";
+      UI.el.ehpBar.style.width="0%";
+      UI.el.eBuffs.innerHTML=""; UI.el.eHint.textContent="";
+    }
+  },
+  badge(container,text){ const s=document.createElement('span'); s.className='chip'; s.textContent=text; container.appendChild(s); },
+  onSend(){
+    const t = UI.el.cmd.value.trim(); if(!t) return;
+    UI.me(t); UI.el.cmd.value="";
+    Controller.handle(t);
+  },
+  quick(text){ UI.el.cmd.value = text; UI.onSend(); },
+  measureBars(){
+    const header = document.querySelector('header');
+    const input = UI.el.inputBar;
+    const root = document.documentElement.style;
+    root.setProperty('--header-h', header?.offsetHeight ? header.offsetHeight+'px' : '58px');
+    root.setProperty('--input-h', input?.offsetHeight ? input.offsetHeight+'px' : '72px');
+  }
+};
+
+const NLU = {
+  normalize(s){ return s.replace(/\s+/g,"").replace(/[！？!。．·、，,…]/g,""); },
+  hasAny(s, arr){ return arr.some(w => s.includes(w)); },
+  pickSlot(s, candidates){ let found=null; candidates.forEach(w=>{ if(s.includes(w) && (!found || w.length>found.length)) found=w; }); return found; },
+  parse(input){
+    const s = this.normalize(input);
+    const D = Data;
+    if(this.hasAny(s, D.synonyms.attack))   return {intent:"ATTACK", target: this.pickSlot(s,D.lexicon.enemies)||"當前敵人"};
+    if(this.hasAny(s, D.synonyms.defend))   return {intent:"DEFEND"};
+    if(this.hasAny(s, D.synonyms.observe))  return {intent:"OBSERVE", object: this.pickSlot(s,[...D.lexicon.enemies,...D.lexicon.items,"四周","周圍"])||"四周"};
+    if(this.hasAny(s, D.synonyms.talk))     return {intent:"TALK", target: this.pickSlot(s,["神秘人","旅人","守衛"])||"未知"};
+    if(this.hasAny(s, D.synonyms.pick))     return {intent:"PICK", item: this.pickSlot(s, D.lexicon.items)||"未知物品"};
+    if(this.hasAny(s, D.synonyms.use))      return {intent:"USE", item: this.pickSlot(s, D.lexicon.items)||"未知物品"};
+    if(this.hasAny(s, D.synonyms.move))     return {intent:"MOVE", location: this.pickSlot(s, Data.lexicon.locations)||"未知地點"};
+    if(this.hasAny(s, D.synonyms.rest))     return {intent:"REST"};
+    if(this.hasAny(s, D.synonyms.save))     return {intent:"SAVE"};
+    if(this.hasAny(s, D.synonyms.load))     return {intent:"LOAD"};
+    const anyEnemy = this.pickSlot(s, D.lexicon.enemies);
+    if(anyEnemy && /打|攻|殺|斬|砍|刺/.test(s)) return {intent:"ATTACK", target:anyEnemy};
+    const anyItem = this.pickSlot(s, D.lexicon.items);
+    if(anyItem && /用|使用|喝|吃|拿|拾|撿/.test(s)){
+      return {intent:/用|使用|喝|吃/.test(s)?"USE":"PICK", item:anyItem};
+    }
+    return {intent:"UNKNOWN", raw:input};
+  }
+};
+
+const RNG = (min,max)=>Math.floor(Math.random()*(max-min+1))+min;
+function clamp(n,min,max){ return Math.max(min, Math.min(max,n)); }
+
+const Combat = {
+  ensureEnemy(){
+    if(State.enemy) return;
+    if(Math.random()<0.30){
+      const pool = Data.scenarios[State.scenario].spawn;
+      const pick = pool[Math.floor(Math.random()*pool.length)];
+      Combat.spawn(pick);
+      UI.sys(`陰影中浮現了某種氣息……`);
+    }
+  },
+  spawn(id){
+    const base = Data.enemies[id];
+    State.enemy = { id, name:base.name, hp:base.maxhp, maxhp:base.maxhp,
+      buffs:{}, stun:0, cd:{}, ai:base.ai, skills:base.skills };
+    UI.sys(`出現了【${base.name}】！`);
+    UI.refresh();
+  },
+  playerAttack(){
+    if(!State.enemy){ UI.sys("周圍沒有敵人。"); return; }
+    const e = State.enemy;
+    const hit = Math.random() > (e.buffs.evasion||0);
+    if(!hit){ UI.sys("你的攻擊被敵人閃過！"); return Combat.enemyTurn(); }
+    const critMul = 1 + 0.25*(State.player.buffs.critUp||0);
+    const dmg = Math.round(RNG(10,18)*critMul);
+    e.hp = clamp(e.hp - dmg, 0, e.maxhp);
+    UI.sys(`你對【${e.name}】造成了 ${dmg} 傷害。`);
+    if(e.hp<=0){
+      UI.sys(`你擊敗了【${e.name}】！戰鬥結束。`);
+      if(e.id==='wolf') Inventory.add("狼牙",1);
+      if(e.id==='wraith') Inventory.add("神秘寶石",1);
+      State.enemy=null; return UI.refresh();
+    }
+    Combat.enemyTurn();
+  },
+  playerDefend(){
+    State.player.defending=true;
+    UI.sys("你擺出防禦姿態，將減少下一次受到的傷害。");
+    Combat.enemyTurn();
+  },
+  enemyTurn(){
+    if(!State.enemy) return;
+    const e = State.enemy;
+    if(e.stun>0){ UI.foe("（暈眩中，無法行動）"); e.stun--; return UI.refresh(); }
+    const action = AI.pickAction(e, State);
+    if(action.type==="buff"){
+      Object.assign(e.buffs, action.apply);
+      UI.foe(`${e.name} 使用了【${action.name}】，獲得增益。`);
+    }else if(action.type==="stun"){
+      State.player.stun = (State.player.stun||0) + action.stun;
+      UI.foe(`${e.name} 使用了【${action.name}】，你被暈眩 ${action.stun} 回合！`);
+    }else if(action.type==="attack"){
+      let dmg = RNG(action.dmg[0], action.dmg[1]);
+      const eCritMul = 1 + 0.25*(e.buffs.critUp||0);
+      dmg = Math.round(dmg*eCritMul);
+      if(State.player.defending){ dmg = Math.round(dmg*0.5); }
+      State.player.hp = clamp(State.player.hp - dmg, 0, State.player.maxhp);
+      UI.foe(`${e.name} 使出【${action.name}】，對你造成 ${dmg} 傷害！`);
+      if(action.lifesteal){
+        const heal = Math.round(dmg*action.lifesteal);
+        e.hp = clamp(e.hp+heal,0,e.maxhp);
+        UI.foe(`它吸收了 ${heal} 生命！`);
+      }
+    }
+    for(const k in e.cd){ e.cd[k] = Math.max(0, e.cd[k]-1); }
+    if(action.cd) e.cd[action.key]=action.cd;
+    State.player.defending=false;
+    if(State.player.stun>0) State.player.stun--;
+    if(State.player.hp<=0){ UI.sys("你倒下了……冒險到此為止。"); }
+    UI.refresh();
+  }
+};
+
+const AI = {
+  pickAction(e, S){
+    if(e.ai==="wolfAI"){
+      if(e.hp <= e.maxhp*0.3 && !e.buffs.enrage){
+        e.buffs.enrage=true; e.buffs.critUp=(e.buffs.critUp||0)+1;
+        return {type:"buff", name:"狂暴", apply:{enrage:true, critUp:e.buffs.critUp}};
+      }
+      if((e.cd.pounce||0)===0 && (!e.skills.pounce.req || e.skills.pounce.req({player:S.player, enemy:e}))){
+        return {type:"attack", key:"pounce", name:e.skills.pounce.name, dmg:e.skills.pounce.dmg, cd:e.skills.pounce.cd};
+      }
+      if((e.cd.howl||0)===0 && (e.buffs.critUp||0)<2){
+        return {type:"buff", key:"howl", name:e.skills.howl.name, apply:{critUp:(e.buffs.critUp||0)+1}, cd:e.skills.howl.cd};
+      }
+      return {type:"attack", key:"bite", name:e.skills.bite.name, dmg:e.skills.bite.dmg};
+    }
+    if(e.ai==="wraithAI"){
+      if((e.cd.veil||0)===0 && !e.buffs.evasion){
+        return {type:"buff", key:"veil", cd:e.skills.veil.cd, name:e.skills.veil.name, apply:{evasion:0.25}};
+      }
+      if((e.cd.wail||0)===0){
+        return {type:"stun", key:"wail", cd:e.skills.wail.cd, name:e.skills.wail.name, stun:1};
+      }
+      return {type:"attack", key:"drain", cd:e.skills.drain.cd, name:e.skills.drain.name, dmg:e.skills.drain.dmg, lifesteal:e.skills.drain.lifesteal};
+    }
+    return {type:"attack", key:"basic", name:"攻擊", dmg:[6,10]};
+  }
+};
+
+const Inventory = {
+  add(name, qty=1){
+    const it = State.player.inventory.find(x=>x.name===name);
+    if(it && Data.items[name].stack!==false){ it.qty+=qty; }
+    else if(!it){ State.player.inventory.push({name, qty}); }
+    UI.sys(`獲得物品：${name} × ${qty}`);
+    UI.refresh();
+  },
+  remove(name, qty=1){
+    const idx = State.player.inventory.findIndex(x=>x.name===name);
+    if(idx<0) return false;
+    const meta = Data.items[name];
+    if(meta && meta.stack!==false){
+      State.player.inventory[idx].qty -= qty;
+      if(State.player.inventory[idx].qty<=0) State.player.inventory.splice(idx,1);
+    }else{
+      State.player.inventory.splice(idx,1);
+    }
+    UI.refresh(); return true;
+  },
+  has(name){ return State.player.inventory.some(x=>x.name===name && x.qty>0); }
+};
+
+const Items = {
+  use(name){
+    if(!Inventory.has(name)){ UI.sys(`你沒有 ${name}。`); return; }
+    const meta = Data.items[name]||{};
+    if(name==="治療藥水"){
+      const before = State.player.hp;
+      State.player.hp = clamp(State.player.hp + (meta.heal||30), 0, State.player.maxhp);
+      Inventory.remove(name,1);
+      UI.sys(`你喝下了治療藥水（+${State.player.hp-before} HP）。`);
+      Combat.ensureEnemy();
+      return UI.refresh();
+    }
+    UI.sys(`${name} 暫無特殊用法（示例）。`); UI.refresh();
+  }
+};
+
+const Controller = {
+  handle(text){
+    const intent = NLU.parse(text);
+
+	// 在 Controller.handle 最前面加入：
+	const t = text.trim();
+	if(/^任務$/.test(t)){
+	  UI.sys("（任務列表已於右側面板顯示）");
+	  UI_Quest.refresh(); return;
+	}
+	const m1 = t.match(/^追蹤任務(.+)$/);
+	if(m1){ 
+	  const name = m1[1].trim();
+	  const id = Object.keys(QuestManager.quests).find(qid => QuestManager.quests[qid].title===name);
+	  if(id){ QuestManager.track(id); UI.sys(`📍 已追蹤：${name}`); UI_Quest.refresh(); }
+	  else UI.sys("找不到該任務。");
+	  return;
+	}
+	const m2 = t.match(/^放棄任務(.+)$/);
+	if(m2){
+	  const name = m2[1].trim();
+	  const id = Object.keys(QuestManager.quests).find(qid => QuestManager.quests[qid].title===name);
+	  if(id){ QuestManager.abandon(id); UI.sys(`🗑️ 已放棄：${name}`); UI_Quest.refresh(); }
+	  else UI.sys("找不到該任務。");
+	  return;
+	}
+
+    switch(intent.intent){
+      case "ATTACK":
+        if(!State.enemy) Combat.ensureEnemy();
+        Combat.playerAttack(); break;
+      case "DEFEND":
+        Combat.playerDefend(); break;
+      case "OBSERVE":
+        Observe.describe(intent.object); Combat.ensureEnemy(); break;
+      case "PICK":
+        Inventory.add(intent.item, 1); Combat.ensureEnemy(); break;
+      case "USE":
+        Items.use(intent.item); break;
+      case "MOVE":
+        Move.to(intent.location); break;
+      case "REST":
+        Rest.perform(); break;
+      case "TALK":
+        UI.sys("你試著交談，但這裡暫時沒有回應。（示例）"); Combat.ensureEnemy(); break;
+      case "SAVE":
+        UI.sys("（示例）已暫存當前進度至記憶體。"); break;
+      case "LOAD":
+        UI.sys("（示例）讀取功能尚未實作持久化。"); break;
+      default:
+        UI.sys("我未聽明白（NLU 未匹配）。試試「攻擊狼／使用治療藥水／觀察四周」。");
+        Combat.ensureEnemy();
+    }
+    UI.refresh();
+  }
+};
+
+const Observe = {
+  describe(obj){
+    if(obj==="四周"||obj==="周圍"){
+      UI.sys(`你環顧四周：${State.location} 有風聲與細碎沙沙，足跡忽隱忽現。`);
+      if(State.enemy) UI.sys(`【${State.enemy.name}】正虎視眈眈。`);
+      return;
+    }
+    if(State.enemy && (obj.includes(State.enemy.name)||obj.includes("敵"))){
+      const e = State.enemy;
+      UI.sys(`你觀察【${e.name}】：生命 ${e.hp}/${e.maxhp}，狀態 ${Object.keys(e.buffs).length? "有增益": "無" }。`);
+      return;
+    }
+    if(Data.items[obj]){ UI.sys(`你打量 ${obj}：${Data.items[obj].desc||"平平無奇。"}`); return; }
+    if(Data.lexicon.locations.includes(obj)){ UI.sys(`${obj} 看起來安全，但也可能隱藏危機。`); return; }
+    UI.sys("你東張西望，但沒有新發現。");
+  }
+};
+/*
+const Move = {
+  to(location){
+    const sc = Data.scenarios[State.scenario];
+    State.location = location && Data.lexicon.locations.includes(location) ? location : sc.locations[Math.floor(Math.random()*sc.locations.length)];
+    UI.sys(`你來到「${State.location}」。`);
+    if(Math.random()<0.5){
+      const pick = sc.spawn[Math.floor(Math.random()*sc.spawn.length)];
+      Combat.spawn(pick);
+    }else{
+      State.enemy=null;
+      UI.refresh();
+    }
+  }
+};
+*/
+const Rest = {
+  perform(){
+    const heal = 15;
+    const before = State.player.hp;
+    State.player.hp = clamp(State.player.hp + heal, 0, State.player.maxhp);
+    UI.sys(`你稍作休息（+${State.player.hp-before} HP）。`);
+    if(Math.random()<0.35){
+      Combat.ensureEnemy();
+      if(State.enemy) UI.foe("（偷襲）黑影逼近，你還來不及完全放鬆。");
+      Combat.enemyTurn();
+    }
+    UI.refresh();
+  }
+};
+
+
+// (A) Game.start 時初始化任務
+const Game = {
+  start(key){
+    // 你原本的 start 邏輯...
+    State.scenario = key;
+    State.locationId = "grove"; // 對應 World 的起點
+    document.getElementById('scenario-screen').style.display="none";
+    document.getElementById('game-screen').style.display="grid";
+    document.getElementById('input-bar').style.display="flex";
+    UI.sys(World.opening);
+
+    QuestManager.init();                // 初始化世界任務
+    // 自動插入一個隨機支線任務試試
+    const sq = QuestGenerator.generate();
+    QuestManager.quests[sq.id] = sq;
+
+    // 觸發起始 onEnter
+    QuestManager.onEvent({type:"onEnter", location:"grove"});
+
+    UI.refresh(); UI.measureBars();
+  }
+};
+
+// (B) 移動行為 → 觸發 onEnter（已在 WorldAPI.moveTo 內）
+// 你可以把原本 Move.to 改為呼叫 WorldAPI.moveTo
+const Move = {
+  to(locName){
+    // 如果輸入是中文地名，先把名字轉回 id
+    const id = Object.keys(World.locations).find(k=>World.locations[k].name===locName) || locName;
+    if(!World.locations[id]) { UI.sys("那裡似乎不存在。"); return; }
+    WorldAPI.moveTo(id);
+  }
+};
+
+// (C) 戰鬥結束 → 觸發 onDefeat
+const _origSpawn = Combat.spawn;
+Combat.spawn = function(enemyId){
+  _origSpawn.call(Combat, enemyId);
+  // 可在 UI 顯示提示
+};
+const _origEnemyDieCheck = Combat.enemyTurn;
+Combat.enemyTurn = function(){
+  const before = State.enemy ? State.enemy.hp : 0;
+  _origEnemyDieCheck.call(Combat);
+  // 如果敵人剛剛死亡（或在 playerAttack 裡完成），觸發 onDefeat
+  if(!State.enemy && before>0){
+    const id = "wolf"; // 在你完整程式中用實際的 State.enemy.id
+    QuestManager.onEvent({type:"onDefeat", enemy:id});
+    State.stats = State.stats || { defeated:{} };
+    State.stats.defeated[id] = (State.stats.defeated[id]||0) + 1;
+  }
+};
+
+// (D) 撿物品 → 觸發 onPick
+const _origAdd = Inventory.add;
+Inventory.add = function(name, qty=1){
+  _origAdd.call(Inventory, name, qty);
+  QuestManager.onEvent({type:"onPick", item:name, qty});
+};
+
+// (E) 使用物品 → 觸發 onUse（可帶 context）
+const _origUse = Items.use;
+Items.use = function(name){
+  // 偵測 context：例如在 old_well 使用火把
+  let context = null;
+  if(State.locationId==="old_well" && name==="火把") context = "well_shaft";
+  _origUse.call(Items, name);
+  QuestManager.onEvent({type:"onUse", item:name, context});
+};
+
+// (F) 觀察 → 觸發 onObserve
+const _origObserve = Observe.describe;
+Observe.describe = function(obj){
+  _origObserve.call(Observe, obj);
+  QuestManager.onEvent({type:"onObserve", target:obj});
+};
+
+
+UI.sys("歡迎來到 FABLE 原型。請先選擇場景。");
+window.addEventListener('resize', UI.measureBars);
+window.addEventListener('orientationchange', UI.measureBars);
+setTimeout(UI.measureBars, 0);
+</script>
+
+
+<script>
+// --- World 資料（示例：迷霧森林） ---
+const World = {
+  id: "mistwood",
+  name: "迷霧森林",
+  opening: "你踏入迷霧森林，薄霧在樹根間蠢動。",
+  locations: {
+    grove: { name:"林徑", exits:["fallen_log","old_well"], ambient:["霧氣繚繞，遠處傳來低沉嚎叫。"], spawns:["wolf:0.6","wraith:0.1"] },
+    fallen_log: { name:"倒木", exits:["grove","temple_outer"], ambient:["枯木上留有利爪刮痕。"], spawns:["wolf:0.4"] },
+    old_well: { name:"古井", exits:["grove"], ambient:["井壁潮濕，似有微光自下方透出。"], 
+      interactables:[
+        {id:"well_shaft", type:"context", use:{"火把":"井內被照亮，你看見青銅鑰匙。"}},
+        {id:"bronze_key", type:"pickup", item:"鑰匙"}
+      ]
+    },
+    temple_outer: { name:"神殿外廊", exits:["fallen_log"], ambient:["殘柱間盤踞苔蘚，風聲如遠古呢喃。"], spawns:["wraith:0.3"] }
+  },
+  quests:[
+    {
+      id:"q_echo_well",
+      title:"井中回聲",
+      desc:"傳聞古井深處藏有能驅散霧氣的物什。",
+      state:"NOT_STARTED",
+      start:{ trigger:"onEnter", location:"grove" },
+      objectives:[
+        {type:"REACH_LOCATION", location:"old_well", desc:"找到古井"},
+        {type:"USE_ITEM", item:"火把", context:"well_shaft", desc:"用火把照亮井內"},
+        {type:"COLLECT_ITEM", item:"鑰匙", qty:1, desc:"取得青銅鑰匙"},
+        {type:"REACH_LOCATION", location:"temple_outer", desc:"前往神殿外廊"}
+      ],
+      completeWhen:"hasItem('鑰匙') && visited('temple_outer')",
+      rewards:[{type:"giveItem", name:"治療藥水", qty:1}]
+    }
+  ]
+};
+
+// --- WorldAPI ---
+const WorldAPI = {
+  visited: new Set(),
+  flags: {},
+  current(){ return World.locations[State.locationId] || null; },
+  neighbors(id){ return (World.locations[id]?.exits||[]); },
+  moveTo(nextId){
+    const cur = World.locations[State.locationId];
+    if(!cur || !cur.exits.includes(nextId)) { UI.sys("無法從此處前往那裡。"); return; }
+    State.locationId = nextId;
+    WorldAPI.visited.add(nextId);
+    UI.sys(`你來到「${World.locations[nextId].name}」。`);
+    QuestManager.onEvent({type:"onEnter", location:nextId});
+    // 遭遇
+    WorldAPI.maybeSpawn(nextId);
+    UI.refresh();
+  },
+  maybeSpawn(id){
+    const sp = World.locations[id].spawns || [];
+    if(sp.length===0) { State.enemy=null; return; }
+    // 權重抽樣
+    const r = Math.random();
+    let acc = 0;
+    for(const e of sp){
+      const [key, p] = e.split(':'); acc += parseFloat(p||"0.3");
+      if(r<=acc){ Combat.spawn(key); break; }
+    }
+  },
+  nameOf(id){ return World.locations[id]?.name || id; }
+};
+</script>
+
+
+<script>
+// --- 任務管理器（支援狀態機、條件、獎勵、追蹤） ---
+const QuestManager = {
+  quests: {},         // id -> questState
+  tracked: null,      // 追蹤中的任務 id
+  init(){
+    (World.quests||[]).forEach(q=>{
+      this.quests[q.id] = JSON.parse(JSON.stringify(q)); // 深拷貝
+    });
+    UI_Quest.refresh();
+  },
+  onEvent(evt){
+    // 1) 任務起始觸發（NOT_STARTED → ACTIVE）
+    for(const q of Object.values(this.quests)){
+      if(q.state==="NOT_STARTED" && q.start){
+        if(q.start.trigger===evt.type && (!q.start.location || q.start.location===evt.location)){
+          q.state="ACTIVE"; UI.sys(`🗒️ 任務啟動：${q.title}`); 
+          UI_Quest.refresh();
+        }
+      }
+    }
+    // 2) 進度更新
+    for(const q of Object.values(this.quests)){
+      if(q.state!=="ACTIVE") continue;
+      let changed=false;
+      for(const obj of q.objectives){
+        if(obj.done) continue;
+        switch(obj.type){
+          case "REACH_LOCATION":
+            if(evt.type==="onEnter" && evt.location===obj.location){ obj.done=true; changed=true; }
+            break;
+          case "DEFEAT_ENEMY":
+            if(evt.type==="onDefeat" && (!obj.enemy || obj.enemy===evt.enemy)){
+              obj.count = (obj.count||0)+1;
+              if(obj.count >= (obj.qty||1)) obj.done=true;
+              changed=true;
+            }
+            break;
+          case "COLLECT_ITEM":
+            if(evt.type==="onPick" && evt.item===obj.item){
+              obj.count = (obj.count||0)+evt.qty;
+              if(obj.count >= (obj.qty||1)) obj.done=true;
+              changed=true;
+            }
+            break;
+          case "USE_ITEM":
+            if(evt.type==="onUse" && evt.item===obj.item && (!obj.context || obj.context===evt.context)){
+              obj.done=true; changed=true;
+            }
+            break;
+          case "OBSERVE":
+            if(evt.type==="onObserve" && (!obj.target || obj.target===evt.target)){
+              obj.done=true; changed=true;
+            }
+            break;
+        }
+      }
+      if(changed){ UI_Quest.refresh(); }
+      // 3) 完成判斷
+      if(q.objectives.every(o=>o.done)){
+        if(QuestManager.evalExpr(q.completeWhen||"true")){
+          q.state="COMPLETED";
+          UI.sys(`✅ 任務完成：${q.title}`);
+          QuestManager.applyRewards(q.rewards||[]);
+          UI_Quest.refresh();
+        }
+      }
+    }
+  },
+  evalExpr(expr){
+    if(!expr) return true;
+    // 提供簡單 DSL 環境
+    const ctx = {
+      hasItem: (name)=>State.player.inventory.some(i=>i.name===name && i.qty>0),
+      visited: (id)=>WorldAPI.visited.has(id),
+      defeated: (id)=>State.stats?.defeated?.[id]||0
+    };
+    try{
+      // 安全簡化：只允許 ctx 的方法；避免 eval 風險（此為原型，正式請用 parser）
+      // 這裡用 Function 包裝，外部僅能存取 ctx
+      return Function("ctx", `with(ctx){ return (${expr}); }`)(ctx);
+    }catch(e){ console.warn("expr error", e); return false; }
+  },
+  applyRewards(rewards){
+    rewards.forEach(r=>{
+      if(r.type==="giveItem") Inventory.add(r.name, r.qty||1);
+      if(r.type==="modifyStat" && r.stat==="hp") {
+        State.player.hp = Math.min(State.player.maxhp, State.player.hp + (r.delta||0));
+      }
+      if(r.type==="unlockLocation") {
+        // 可在 World.flags 或 exits 追加
+        WorldAPI.flags[r.id]=true;
+      }
+    });
+  },
+  track(id){ if(this.quests[id]){ this.tracked=id; UI_Quest.refresh(); } },
+  abandon(id){ if(this.quests[id] && this.quests[id].state==="ACTIVE"){ this.quests[id].state="FAILED"; UI_Quest.refresh(); } }
+};
+
+// --- 任務面板 UI 幫手 ---
+const UI_Quest = {
+  el: { list: document.getElementById('quest-list') },
+  refresh(){
+    const qs = Object.values(QuestManager.quests);
+    const active = qs.filter(q=>q.state==="ACTIVE");
+    const completed = qs.filter(q=>q.state==="COMPLETED");
+    const failed = qs.filter(q=>q.state==="FAILED");
+    let html = "";
+    const render = (title, arr) => {
+      if(arr.length===0) return;
+      html += `<div style="margin:6px 0"><b>${title}</b></div>`;
+      arr.forEach(q=>{
+        const isTracked = (QuestManager.tracked===q.id);
+        html += `<div style="margin:4px 0">
+          ${isTracked?'📍':''}<b>${q.title}</b> <span class="small">(${q.state})</span><br/>
+          <span class="small">${q.desc||""}</span><br/>
+          <ul style="margin:6px 0 0 16px">` +
+          q.objectives.map(o=>{
+            const p = (o.qty? ` (${o.count||0}/${o.qty})` : "");
+            return `<li class="small">${o.done?'✅':'⬜'} ${o.desc||o.type}${p}</li>`;
+          }).join("") + `</ul>
+        </div>`;
+      });
+    };
+    render("進行中", active);
+    render("已完成", completed);
+    render("已失敗", failed);
+    this.el.list.innerHTML = html || "（尚未有任務）";
+  }
+};
+</script>
+
+
+<script>
+// --- 輕量模板產生器（之後可換成 LLM 回傳） ---
+const QuestGenerator = {
+  rand(arr){ return arr[Math.floor(Math.random()*arr.length)]; },
+  generate(){
+    const L = Object.keys(World.locations);
+    const enemies = ["wolf","wraith"];
+    const items = ["神秘寶石","狼牙","治療藥水"];
+
+    const pattern = this.rand(["COLLECT","DEFEAT","REACH","OBSERVE"]);
+    const qid = "sq_" + Math.random().toString(36).slice(2,8);
+
+    if(pattern==="COLLECT"){
+      const it = this.rand(items);
+      return {
+        id: qid, title:`失落的 ${it}`,
+        desc:`有旅人請你尋回 ${it}。`,
+        state:"NOT_STARTED", start:{trigger:"onEnter", location: L[0]},
+        objectives:[{type:"COLLECT_ITEM", item:it, qty:1, desc:`取得 ${it}`}],
+        rewards:[{type:"giveItem", name:"治療藥水", qty:1}]
+      };
+    }
+    if(pattern==="DEFEAT"){
+      const e = this.rand(enemies);
+      return {
+        id: qid, title:`陰影的威脅`,
+        desc:`清除附近的怪物，還百姓安寧。`,
+        state:"NOT_STARTED", start:{trigger:"onEnter", location: L[0]},
+        objectives:[{type:"DEFEAT_ENEMY", enemy:e, qty:2, desc:`擊敗 ${e} ×2`}],
+        rewards:[{type:"giveItem", name:"神秘寶石", qty:1}]
+      };
+    }
+    if(pattern==="REACH"){
+      const loc = this.rand(L);
+      return {
+        id: qid, title:`遺跡踏查`,
+        desc:`勘查 ${World.locations[loc].name} 是否安全。`,
+        state:"NOT_STARTED", start:{trigger:"onEnter", location: L[0]},
+        objectives:[{type:"REACH_LOCATION", location:loc, desc:`前往 ${World.locations[loc].name}`}],
+        rewards:[{type:"giveItem", name:"治療藥水", qty:1}]
+      };
+    }
+    // OBSERVE
+    return {
+      id: qid, title:`微光的秘密`,
+      desc:`在當地調查可疑的跡象。`,
+      state:"NOT_STARTED", start:{trigger:"onEnter", location: L[0]},
+      objectives:[{type:"OBSERVE", target:"四周", desc:"仔細觀察四周線索"}],
+      rewards:[{type:"giveItem", name:"狼牙", qty:1}]
+    };
+  }
+};
+
+// 你可在 Game.start 後：QuestManager.quests[newQuest.id] = newQuest;
+</script>
+
+
+</body>
+</html>
