@@ -183,7 +183,11 @@ class ChineseNLP:
         """輕量級預處理（僅用於規則方法）"""
         
         text = text.strip()
-        text = text.replace("！", "!").replace("？", "?")
+        
+        # Remove all special characters, keeping only alphanumeric and Chinese characters
+        text = re.sub(r'[^\w\s\u4e00-\u9fff]', ' ', text)
+
+        text = re.sub(r'\s+', ' ', text)  # 將多個空格替換為單個空格
         text = " ".join(text.split())
         text = text.lower()
 
