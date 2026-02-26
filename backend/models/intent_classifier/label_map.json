@@ -1,0 +1,26 @@
+{
+  "label2id": {
+    "ATTACK": 0,
+    "DEFEND": 1,
+    "ESCAPE": 2,
+    "MOVE": 3,
+    "OBSERVE": 4,
+    "PICK": 5,
+    "QUESTION": 6,
+    "REST": 7,
+    "TALK": 8,
+    "USE": 9
+  },
+  "id2label": {
+    "0": "ATTACK",
+    "1": "DEFEND",
+    "2": "ESCAPE",
+    "3": "MOVE",
+    "4": "OBSERVE",
+    "5": "PICK",
+    "6": "QUESTION",
+    "7": "REST",
+    "8": "TALK",
+    "9": "USE"
+  }
+}

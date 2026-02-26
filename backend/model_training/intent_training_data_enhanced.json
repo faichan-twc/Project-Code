@@ -1,0 +1,8254 @@
+[
+  {
+    "text": "攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "斬",
+    "label": "ATTACK"
+  },
+  {
+    "text": "砍",
+    "label": "ATTACK"
+  },
+  {
+    "text": "刺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "射",
+    "label": "ATTACK"
+  },
+  {
+    "text": "揍",
+    "label": "ATTACK"
+  },
+  {
+    "text": "劈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit",
+    "label": "ATTACK"
+  },
+  {
+    "text": "strike",
+    "label": "ATTACK"
+  },
+  {
+    "text": "slash",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight",
+    "label": "ATTACK"
+  },
+  {
+    "text": "kill",
+    "label": "ATTACK"
+  },
+  {
+    "text": "防禦",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防守",
+    "label": "DEFEND"
+  },
+  {
+    "text": "格擋",
+    "label": "DEFEND"
+  },
+  {
+    "text": "架勢",
+    "label": "DEFEND"
+  },
+  {
+    "text": "defend",
+    "label": "DEFEND"
+  },
+  {
+    "text": "block",
+    "label": "DEFEND"
+  },
+  {
+    "text": "guard",
+    "label": "DEFEND"
+  },
+  {
+    "text": "parry",
+    "label": "DEFEND"
+  },
+  {
+    "text": "觀察",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "察看",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "檢視",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "四處看看",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "observe",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "examine",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "inspect",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "view",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "說話",
+    "label": "TALK"
+  },
+  {
+    "text": "對話",
+    "label": "TALK"
+  },
+  {
+    "text": "交談",
+    "label": "TALK"
+  },
+  {
+    "text": "問",
+    "label": "TALK"
+  },
+  {
+    "text": "詢問",
+    "label": "TALK"
+  },
+  {
+    "text": "talk",
+    "label": "TALK"
+  },
+  {
+    "text": "speak",
+    "label": "TALK"
+  },
+  {
+    "text": "chat",
+    "label": "TALK"
+  },
+  {
+    "text": "ask",
+    "label": "TALK"
+  },
+  {
+    "text": "inquire",
+    "label": "TALK"
+  },
+  {
+    "text": "拾取",
+    "label": "PICK"
+  },
+  {
+    "text": "撿",
+    "label": "PICK"
+  },
+  {
+    "text": "拿",
+    "label": "PICK"
+  },
+  {
+    "text": "拿起",
+    "label": "PICK"
+  },
+  {
+    "text": "取得",
+    "label": "PICK"
+  },
+  {
+    "text": "撿起",
+    "label": "PICK"
+  },
+  {
+    "text": "收集",
+    "label": "PICK"
+  },
+  {
+    "text": "獲得",
+    "label": "PICK"
+  },
+  {
+    "text": "pick",
+    "label": "PICK"
+  },
+  {
+    "text": "take",
+    "label": "PICK"
+  },
+  {
+    "text": "get",
+    "label": "PICK"
+  },
+  {
+    "text": "grab",
+    "label": "PICK"
+  },
+  {
+    "text": "collect",
+    "label": "PICK"
+  },
+  {
+    "text": "pickup",
+    "label": "PICK"
+  },
+  {
+    "text": "使用",
+    "label": "USE"
+  },
+  {
+    "text": "用",
+    "label": "USE"
+  },
+  {
+    "text": "喝",
+    "label": "USE"
+  },
+  {
+    "text": "吃",
+    "label": "USE"
+  },
+  {
+    "text": "服用",
+    "label": "USE"
+  },
+  {
+    "text": "use",
+    "label": "USE"
+  },
+  {
+    "text": "drink",
+    "label": "USE"
+  },
+  {
+    "text": "eat",
+    "label": "USE"
+  },
+  {
+    "text": "consume",
+    "label": "USE"
+  },
+  {
+    "text": "apply",
+    "label": "USE"
+  },
+  {
+    "text": "前往",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到",
+    "label": "MOVE"
+  },
+  {
+    "text": "去",
+    "label": "MOVE"
+  },
+  {
+    "text": "移動",
+    "label": "MOVE"
+  },
+  {
+    "text": "進入",
+    "label": "MOVE"
+  },
+  {
+    "text": "趕往",
+    "label": "MOVE"
+  },
+  {
+    "text": "move",
+    "label": "MOVE"
+  },
+  {
+    "text": "go",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk",
+    "label": "MOVE"
+  },
+  {
+    "text": "travel",
+    "label": "MOVE"
+  },
+  {
+    "text": "enter",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto",
+    "label": "MOVE"
+  },
+  {
+    "text": "休息",
+    "label": "REST"
+  },
+  {
+    "text": "睡覺",
+    "label": "REST"
+  },
+  {
+    "text": "療傷",
+    "label": "REST"
+  },
+  {
+    "text": "打坐",
+    "label": "REST"
+  },
+  {
+    "text": "冥想",
+    "label": "REST"
+  },
+  {
+    "text": "rest",
+    "label": "REST"
+  },
+  {
+    "text": "sleep",
+    "label": "REST"
+  },
+  {
+    "text": "heal",
+    "label": "REST"
+  },
+  {
+    "text": "meditate",
+    "label": "REST"
+  },
+  {
+    "text": "逃跑",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃走",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃離",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "撤退",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "退後",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "escape",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "flee",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "run",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "retreat",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "如何",
+    "label": "QUESTION"
+  },
+  {
+    "text": "哪裡",
+    "label": "QUESTION"
+  },
+  {
+    "text": "誰",
+    "label": "QUESTION"
+  },
+  {
+    "text": "when",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where",
+    "label": "QUESTION"
+  },
+  {
+    "text": "who",
+    "label": "QUESTION"
+  },
+  {
+    "text": "攻擊 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 攻擊 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 攻擊 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 攻擊 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 攻擊 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 攻擊 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 野狗 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 攻擊 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 攻擊 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 攻擊 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 攻擊 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 攻擊 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 dog using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 狼 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 wolf using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 打 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 打 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 打 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 打 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 打 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 野狗 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 打 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 打 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 打 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 打 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 打 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 dog using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 狼 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 wolf using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 殺 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 殺 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 殺 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 殺 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 殺 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 野狗 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 殺 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 殺 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 殺 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 殺 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 殺 dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 dog using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 狼 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch 殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 wolf using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 attack 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 attack 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword attack 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 attack 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch attack 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 野狗 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 attack dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 attack dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword attack dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 attack dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch attack dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack dog using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 attack 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 attack 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword attack 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 attack 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch attack 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 狼 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 attack wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 attack wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword attack wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 attack wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch attack wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack wolf using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 hit 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 hit 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword hit 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 hit 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch hit 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 野狗 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 hit dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 hit dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword hit dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 hit dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch hit dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit dog using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 hit 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 hit 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword hit 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 hit 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch hit 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 狼 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 hit wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 hit wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword hit wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 hit wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch hit wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit wolf using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 fight 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 fight 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword fight 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 fight 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch fight 野狗",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 野狗 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 fight dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 fight dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword fight dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 fight dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch fight dog",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight dog using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 fight 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 fight 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword fight 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 fight 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch fight 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight 狼 using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 石頭 fight wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 fight wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf with 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using 石頭",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using 石頭 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword fight wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf with sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using sword",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using sword quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 火把 fight wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf with 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using 火把",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using 火把 quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 torch fight wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf with torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using torch",
+    "label": "ATTACK"
+  },
+  {
+    "text": "fight wolf using torch quickly",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊那隻狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊那隻怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊那隻wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊那隻king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打那隻狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打那隻怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打那隻wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打那隻king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺那隻狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺那隻怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺那隻wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺那隻king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向狼 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向怨靈 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向wolf 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向king 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向狼 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向怨靈 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向wolf 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向king 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向狼 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向怨靈 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向wolf 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "向king 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對狼 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對怨靈 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對wolf 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對king 攻擊",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對狼 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對怨靈 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對wolf 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對king 打",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對狼 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對怨靈 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對wolf 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "對king 殺",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要攻擊 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要攻擊 king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要打 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要打 king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要殺 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "我要殺 king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 the 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 the 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 the wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 the king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 the 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 the 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 the wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 the king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 the 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 the 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 the wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 the king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 at 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 at 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 at wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻擊 at king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 at 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 at 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 at wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 at king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 at 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 at 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 at wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "殺 at king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 攻擊 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 攻擊 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 攻擊 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 攻擊 king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 打 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 打 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 打 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 打 king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 殺 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 殺 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 殺 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "i want to 殺 king",
+    "label": "ATTACK"
+  },
+  {
+    "text": "前往 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "前往 to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想前往 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 前往 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想去 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 去 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "走到 to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想走到 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 走到 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 well",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "到 to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想到 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to 到 dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "move 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "move 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "move 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "move 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "move 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "move temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "move forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "move well",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move well",
+    "label": "MOVE"
+  },
+  {
+    "text": "move cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "move dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "move to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想move dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to move dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "go 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "go 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "go 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "go 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "go 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "go temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "go forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "go well",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go well",
+    "label": "MOVE"
+  },
+  {
+    "text": "go cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "go dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "go to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想go dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to go dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk well",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk well",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "walk to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想walk dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to walk dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto 森林深處",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto 古井",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto 山洞",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto 神殿",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto well",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to well",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto well",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto well",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto cave",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "goto to dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "我想goto dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "i want to goto dungeon",
+    "label": "MOVE"
+  },
+  {
+    "text": "觀察四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "觀察 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 觀察 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 觀察 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "查看 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 查看 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 查看 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "看 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 看 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 看 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "調查 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to 調查 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 調查 king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "look king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to look king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 look king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 四周",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 周圍",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 地面",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 敵人",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 線索",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 野狗",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 狼",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 怨靈",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check 不死之王",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check around",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check ground",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check enemy",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check clue",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check dog",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check wolf",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check ghost",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "check king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "i want to check king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "我想 check king",
+    "label": "OBSERVE"
+  },
+  {
+    "text": "拾取 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 那個碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拾取 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拾取 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 那個藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拾取 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拾取 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 那個草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拾取 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拾取 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 那個stone",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拾取 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拾取 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 那個potion",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拾取 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拾取 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 那個sword",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拾取 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拾取 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "拾取 那個torch",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拾取 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拾取 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 那個碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 撿 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 撿 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 那個藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 撿 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 撿 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 那個草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 撿 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 撿 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 那個stone",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 撿 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 撿 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 那個potion",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 撿 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 撿 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 那個sword",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 撿 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 撿 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 那個torch",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 撿 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 撿 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 那個碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拿 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拿 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 那個藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拿 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拿 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 那個草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拿 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拿 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 那個stone",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拿 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拿 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 那個potion",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拿 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拿 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 那個sword",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拿 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拿 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "拿 那個torch",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 拿 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 拿 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "取 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "取 那個碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 取 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 取 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "取 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "取 那個藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 取 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 取 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "取 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "取 那個草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 取 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 取 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "取 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "取 那個stone",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 取 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 取 stone",
+    "label": "PICK"
+  },
+  {
+    "text": "取 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "取 那個potion",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 取 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 取 potion",
+    "label": "PICK"
+  },
+  {
+    "text": "取 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "取 那個sword",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 取 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 取 sword",
+    "label": "PICK"
+  },
+  {
+    "text": "取 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "取 那個torch",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to 取 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 取 torch",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 那個碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to pick 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 pick 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 那個藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to pick 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 pick 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 那個草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to pick 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 pick 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "pick stone",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 那個stone",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to pick stone",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 pick stone",
+    "label": "PICK"
+  },
+  {
+    "text": "pick potion",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 那個potion",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to pick potion",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 pick potion",
+    "label": "PICK"
+  },
+  {
+    "text": "pick sword",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 那個sword",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to pick sword",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 pick sword",
+    "label": "PICK"
+  },
+  {
+    "text": "pick torch",
+    "label": "PICK"
+  },
+  {
+    "text": "pick 那個torch",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to pick torch",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 pick torch",
+    "label": "PICK"
+  },
+  {
+    "text": "take 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "take 那個碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to take 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 take 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "take 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "take 那個藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to take 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 take 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "take 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "take 那個草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to take 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 take 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "take stone",
+    "label": "PICK"
+  },
+  {
+    "text": "take 那個stone",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to take stone",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 take stone",
+    "label": "PICK"
+  },
+  {
+    "text": "take potion",
+    "label": "PICK"
+  },
+  {
+    "text": "take 那個potion",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to take potion",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 take potion",
+    "label": "PICK"
+  },
+  {
+    "text": "take sword",
+    "label": "PICK"
+  },
+  {
+    "text": "take 那個sword",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to take sword",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 take sword",
+    "label": "PICK"
+  },
+  {
+    "text": "take torch",
+    "label": "PICK"
+  },
+  {
+    "text": "take 那個torch",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to take torch",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 take torch",
+    "label": "PICK"
+  },
+  {
+    "text": "get 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "get 那個碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to get 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 get 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "get 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "get 那個藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to get 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 get 藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "get 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "get 那個草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to get 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 get 草藥",
+    "label": "PICK"
+  },
+  {
+    "text": "get stone",
+    "label": "PICK"
+  },
+  {
+    "text": "get 那個stone",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to get stone",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 get stone",
+    "label": "PICK"
+  },
+  {
+    "text": "get potion",
+    "label": "PICK"
+  },
+  {
+    "text": "get 那個potion",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to get potion",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 get potion",
+    "label": "PICK"
+  },
+  {
+    "text": "get sword",
+    "label": "PICK"
+  },
+  {
+    "text": "get 那個sword",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to get sword",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 get sword",
+    "label": "PICK"
+  },
+  {
+    "text": "get torch",
+    "label": "PICK"
+  },
+  {
+    "text": "get 那個torch",
+    "label": "PICK"
+  },
+  {
+    "text": "i want to get torch",
+    "label": "PICK"
+  },
+  {
+    "text": "我想 get torch",
+    "label": "PICK"
+  },
+  {
+    "text": "使用 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "使用 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "使用 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 火把",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 火把",
+    "label": "USE"
+  },
+  {
+    "text": "使用 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "使用 potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 potion",
+    "label": "USE"
+  },
+  {
+    "text": "使用 torch",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 torch",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 torch",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 torch",
+    "label": "USE"
+  },
+  {
+    "text": "使用 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "使用 map",
+    "label": "USE"
+  },
+  {
+    "text": "我要 使用 map",
+    "label": "USE"
+  },
+  {
+    "text": "我想 使用 map",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 使用 map",
+    "label": "USE"
+  },
+  {
+    "text": "喝 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "喝 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "喝 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 火把",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 火把",
+    "label": "USE"
+  },
+  {
+    "text": "喝 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "喝 potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 potion",
+    "label": "USE"
+  },
+  {
+    "text": "喝 torch",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 torch",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 torch",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 torch",
+    "label": "USE"
+  },
+  {
+    "text": "喝 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "喝 map",
+    "label": "USE"
+  },
+  {
+    "text": "我要 喝 map",
+    "label": "USE"
+  },
+  {
+    "text": "我想 喝 map",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 喝 map",
+    "label": "USE"
+  },
+  {
+    "text": "吃 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "吃 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "吃 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 火把",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 火把",
+    "label": "USE"
+  },
+  {
+    "text": "吃 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "吃 potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 potion",
+    "label": "USE"
+  },
+  {
+    "text": "吃 torch",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 torch",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 torch",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 torch",
+    "label": "USE"
+  },
+  {
+    "text": "吃 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "吃 map",
+    "label": "USE"
+  },
+  {
+    "text": "我要 吃 map",
+    "label": "USE"
+  },
+  {
+    "text": "我想 吃 map",
+    "label": "USE"
+  },
+  {
+    "text": "i want to 吃 map",
+    "label": "USE"
+  },
+  {
+    "text": "use 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "use 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "use 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use 火把",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use 火把",
+    "label": "USE"
+  },
+  {
+    "text": "use 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "use potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use potion",
+    "label": "USE"
+  },
+  {
+    "text": "use torch",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use torch",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use torch",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use torch",
+    "label": "USE"
+  },
+  {
+    "text": "use healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "use map",
+    "label": "USE"
+  },
+  {
+    "text": "我要 use map",
+    "label": "USE"
+  },
+  {
+    "text": "我想 use map",
+    "label": "USE"
+  },
+  {
+    "text": "i want to use map",
+    "label": "USE"
+  },
+  {
+    "text": "drink 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "drink 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "drink 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink 火把",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink 火把",
+    "label": "USE"
+  },
+  {
+    "text": "drink 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "drink potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink potion",
+    "label": "USE"
+  },
+  {
+    "text": "drink torch",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink torch",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink torch",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink torch",
+    "label": "USE"
+  },
+  {
+    "text": "drink healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "drink map",
+    "label": "USE"
+  },
+  {
+    "text": "我要 drink map",
+    "label": "USE"
+  },
+  {
+    "text": "我想 drink map",
+    "label": "USE"
+  },
+  {
+    "text": "i want to drink map",
+    "label": "USE"
+  },
+  {
+    "text": "eat 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat 治療藥水",
+    "label": "USE"
+  },
+  {
+    "text": "eat 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat 藥水",
+    "label": "USE"
+  },
+  {
+    "text": "eat 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat 火把",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat 火把",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat 火把",
+    "label": "USE"
+  },
+  {
+    "text": "eat 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat 地圖",
+    "label": "USE"
+  },
+  {
+    "text": "eat potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat potion",
+    "label": "USE"
+  },
+  {
+    "text": "eat torch",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat torch",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat torch",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat torch",
+    "label": "USE"
+  },
+  {
+    "text": "eat healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat healing potion",
+    "label": "USE"
+  },
+  {
+    "text": "eat map",
+    "label": "USE"
+  },
+  {
+    "text": "我要 eat map",
+    "label": "USE"
+  },
+  {
+    "text": "我想 eat map",
+    "label": "USE"
+  },
+  {
+    "text": "i want to eat map",
+    "label": "USE"
+  },
+  {
+    "text": "what is 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "樹 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 樹 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 樹 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "樹 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "樹 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 樹 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "樹 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 樹",
+    "label": "QUESTION"
+  },
+  {
+    "text": "樹 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "tree 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 tree 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is tree from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "tree 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "tree 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is tree here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "tree 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 tree",
+    "label": "QUESTION"
+  },
+  {
+    "text": "tree 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "地面 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 地面 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 地面 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "地面 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "地面 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 地面 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "地面 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 地面",
+    "label": "QUESTION"
+  },
+  {
+    "text": "地面 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "ground 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 ground 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is ground from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "ground 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "ground 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is ground here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "ground 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 ground",
+    "label": "QUESTION"
+  },
+  {
+    "text": "ground 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "霧 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 霧 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 霧 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "霧 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "霧 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 霧 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "霧 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 霧",
+    "label": "QUESTION"
+  },
+  {
+    "text": "霧 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "fog 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 fog 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is fog from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "fog 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "fog 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is fog here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "fog 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 fog",
+    "label": "QUESTION"
+  },
+  {
+    "text": "fog 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "倒木 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 倒木 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 倒木 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "倒木 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "倒木 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 倒木 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "倒木 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 倒木",
+    "label": "QUESTION"
+  },
+  {
+    "text": "倒木 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "log 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 log 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is log from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "log 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "log 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is log here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "log 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 log",
+    "label": "QUESTION"
+  },
+  {
+    "text": "log 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "武器 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 武器 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 武器 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "武器 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "武器 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 武器 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "武器 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 武器",
+    "label": "QUESTION"
+  },
+  {
+    "text": "武器 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "weapon 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 weapon 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is weapon from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "weapon 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "weapon 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is weapon here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "weapon 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 weapon",
+    "label": "QUESTION"
+  },
+  {
+    "text": "weapon 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "石碑 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 石碑 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 石碑 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "石碑 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "石碑 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 石碑 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "石碑 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 石碑",
+    "label": "QUESTION"
+  },
+  {
+    "text": "石碑 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "monument 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 monument 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is monument from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "monument 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "monument 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is monument here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "monument 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 monument",
+    "label": "QUESTION"
+  },
+  {
+    "text": "monument 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "井 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 井 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 井 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "井 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "井 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 井 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "井 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 井",
+    "label": "QUESTION"
+  },
+  {
+    "text": "井 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "well 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 well 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is well from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "well 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "well 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is well here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "well 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 well",
+    "label": "QUESTION"
+  },
+  {
+    "text": "well 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what's 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "符文 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個 符文 是什麼",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is 符文 from",
+    "label": "QUESTION"
+  },
+  {
+    "text": "符文 從哪來",
+    "label": "QUESTION"
+  },
+  {
+    "text": "符文 的來源",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is 符文 here",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "符文 為什麼在這",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how to 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼 符文",
+    "label": "QUESTION"
+  },
+  {
+    "text": "符文 怎麼用",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這是什麼?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這裡是哪裡?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼走?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "為什麼有霧?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "霧從哪來?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "what is this?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where am i?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "how do i get there?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "why is there fog?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "where is the fog from?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "什麼是石頭?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "這個石頭是什麼?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "神殿在哪裡?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "怎麼去神殿?",
+    "label": "QUESTION"
+  },
+  {
+    "text": "守住",
+    "label": "DEFEND"
+  },
+  {
+    "text": "我要防禦",
+    "label": "DEFEND"
+  },
+  {
+    "text": "進入防守姿態",
+    "label": "DEFEND"
+  },
+  {
+    "text": "準備防禦",
+    "label": "DEFEND"
+  },
+  {
+    "text": "舉起盾牌",
+    "label": "DEFEND"
+  },
+  {
+    "text": "擺出防守架勢",
+    "label": "DEFEND"
+  },
+  {
+    "text": "保持防守",
+    "label": "DEFEND"
+  },
+  {
+    "text": "專心防守",
+    "label": "DEFEND"
+  },
+  {
+    "text": "小心防禦",
+    "label": "DEFEND"
+  },
+  {
+    "text": "快防",
+    "label": "DEFEND"
+  },
+  {
+    "text": "趕快防守",
+    "label": "DEFEND"
+  },
+  {
+    "text": "先守一下",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防一下",
+    "label": "DEFEND"
+  },
+  {
+    "text": "守好",
+    "label": "DEFEND"
+  },
+  {
+    "text": "穩住防守",
+    "label": "DEFEND"
+  },
+  {
+    "text": "hold defense",
+    "label": "DEFEND"
+  },
+  {
+    "text": "stay defensive",
+    "label": "DEFEND"
+  },
+  {
+    "text": "keep guard",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防禦攻擊",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防守住",
+    "label": "DEFEND"
+  },
+  {
+    "text": "擋下攻擊",
+    "label": "DEFEND"
+  },
+  {
+    "text": "格擋來襲",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防禦敵人",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防住敵人的攻擊",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防",
+    "label": "DEFEND"
+  },
+  {
+    "text": "守",
+    "label": "DEFEND"
+  },
+  {
+    "text": "擋",
+    "label": "DEFEND"
+  },
+  {
+    "text": "hold",
+    "label": "DEFEND"
+  },
+  {
+    "text": "guard up",
+    "label": "DEFEND"
+  },
+  {
+    "text": "defense mode",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防禦!",
+    "label": "DEFEND"
+  },
+  {
+    "text": "快防禦!",
+    "label": "DEFEND"
+  },
+  {
+    "text": "防守!",
+    "label": "DEFEND"
+  },
+  {
+    "text": "擋住!",
+    "label": "DEFEND"
+  },
+  {
+    "text": "恢復",
+    "label": "REST"
+  },
+  {
+    "text": "recover",
+    "label": "REST"
+  },
+  {
+    "text": "我要休息",
+    "label": "REST"
+  },
+  {
+    "text": "休息一下",
+    "label": "REST"
+  },
+  {
+    "text": "睡一覺",
+    "label": "REST"
+  },
+  {
+    "text": "恢復體力",
+    "label": "REST"
+  },
+  {
+    "text": "恢復生命",
+    "label": "REST"
+  },
+  {
+    "text": "療傷休息",
+    "label": "REST"
+  },
+  {
+    "text": "停下來休息",
+    "label": "REST"
+  },
+  {
+    "text": "找地方休息",
+    "label": "REST"
+  },
+  {
+    "text": "坐下休息",
+    "label": "REST"
+  },
+  {
+    "text": "先休息",
+    "label": "REST"
+  },
+  {
+    "text": "休息下",
+    "label": "REST"
+  },
+  {
+    "text": "歇一會",
+    "label": "REST"
+  },
+  {
+    "text": "歇息",
+    "label": "REST"
+  },
+  {
+    "text": "打個盹",
+    "label": "REST"
+  },
+  {
+    "text": "take a rest",
+    "label": "REST"
+  },
+  {
+    "text": "have a rest",
+    "label": "REST"
+  },
+  {
+    "text": "take a break",
+    "label": "REST"
+  },
+  {
+    "text": "治療傷勢",
+    "label": "REST"
+  },
+  {
+    "text": "回血",
+    "label": "REST"
+  },
+  {
+    "text": "補血",
+    "label": "REST"
+  },
+  {
+    "text": "恢復hp",
+    "label": "REST"
+  },
+  {
+    "text": "heal up",
+    "label": "REST"
+  },
+  {
+    "text": "recover health",
+    "label": "REST"
+  },
+  {
+    "text": "息",
+    "label": "REST"
+  },
+  {
+    "text": "歇",
+    "label": "REST"
+  },
+  {
+    "text": "睡",
+    "label": "REST"
+  },
+  {
+    "text": "break",
+    "label": "REST"
+  },
+  {
+    "text": "nap",
+    "label": "REST"
+  },
+  {
+    "text": "休息!",
+    "label": "REST"
+  },
+  {
+    "text": "快休息!",
+    "label": "REST"
+  },
+  {
+    "text": "趕快休息!",
+    "label": "REST"
+  },
+  {
+    "text": "先休息一下!",
+    "label": "REST"
+  },
+  {
+    "text": "快跑",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "趕快逃",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "快逃",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃命",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "撤退吧",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "快點逃跑",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃離這裡",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "離開戰鬥",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "撤離",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "跑路",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "溜了",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "閃人",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "先走",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "撤",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "run away",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "get out",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "get away",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "打不過快逃",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃離戰鬥",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃出去",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "趕緊跑",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "快跑啊",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "跑",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "走",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "閃",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "flee!",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "逃跑!",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "快逃!",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "撤退!",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "快跑!",
+    "label": "ESCAPE"
+  },
+  {
+    "text": "聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "和守衛說話",
+    "label": "TALK"
+  },
+  {
+    "text": "和旅人說話",
+    "label": "TALK"
+  },
+  {
+    "text": "和神秘人說話",
+    "label": "TALK"
+  },
+  {
+    "text": "和商人說話",
+    "label": "TALK"
+  },
+  {
+    "text": "和guard說話",
+    "label": "TALK"
+  },
+  {
+    "text": "和traveler說話",
+    "label": "TALK"
+  },
+  {
+    "text": "和merchant說話",
+    "label": "TALK"
+  },
+  {
+    "text": "跟守衛聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "跟旅人聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "跟神秘人聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "跟商人聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "跟guard聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "跟traveler聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "跟merchant聊天",
+    "label": "TALK"
+  },
+  {
+    "text": "問守衛",
+    "label": "TALK"
+  },
+  {
+    "text": "問旅人",
+    "label": "TALK"
+  },
+  {
+    "text": "問神秘人",
+    "label": "TALK"
+  },
+  {
+    "text": "問商人",
+    "label": "TALK"
+  },
+  {
+    "text": "問guard",
+    "label": "TALK"
+  },
+  {
+    "text": "問traveler",
+    "label": "TALK"
+  },
+  {
+    "text": "問merchant",
+    "label": "TALK"
+  },
+  {
+    "text": "talk to 守衛",
+    "label": "TALK"
+  },
+  {
+    "text": "talk to 旅人",
+    "label": "TALK"
+  },
+  {
+    "text": "talk to 神秘人",
+    "label": "TALK"
+  },
+  {
+    "text": "talk to 商人",
+    "label": "TALK"
+  },
+  {
+    "text": "talk to guard",
+    "label": "TALK"
+  },
+  {
+    "text": "talk to traveler",
+    "label": "TALK"
+  },
+  {
+    "text": "talk to merchant",
+    "label": "TALK"
+  },
+  {
+    "text": "speak with 守衛",
+    "label": "TALK"
+  },
+  {
+    "text": "speak with 旅人",
+    "label": "TALK"
+  },
+  {
+    "text": "speak with 神秘人",
+    "label": "TALK"
+  },
+  {
+    "text": "speak with 商人",
+    "label": "TALK"
+  },
+  {
+    "text": "speak with guard",
+    "label": "TALK"
+  },
+  {
+    "text": "speak with traveler",
+    "label": "TALK"
+  },
+  {
+    "text": "speak with merchant",
+    "label": "TALK"
+  },
+  {
+    "text": "砍 the enemy",
+    "label": "ATTACK"
+  },
+  {
+    "text": "打 the ghost",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 sword 攻擊狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用 stone 砸怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "attack 影牙狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "kill 怨靈",
+    "label": "ATTACK"
+  },
+  {
+    "text": "hit 不死之王",
+    "label": "ATTACK"
+  },
+  {
+    "text": "strike the 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "use sword 砍 wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "快速 attack 敵人",
+    "label": "ATTACK"
+  },
+  {
+    "text": "用力 hit the enemy",
+    "label": "ATTACK"
+  },
+  {
+    "text": "walk to 森林",
+    "label": "MOVE"
+  },
+  {
+    "text": "去 the forest",
+    "label": "MOVE"
+  },
+  {
+    "text": "enter the 地下墓穴",
+    "label": "MOVE"
+  },
+  {
+    "text": "pick up 碎石",
+    "label": "PICK"
+  },
+  {
+    "text": "撿 the sword",
+    "label": "PICK"
+  },
+  {
+    "text": "take 治療藥水",
+    "label": "PICK"
+  },
+  {
+    "text": "grab the 火把",
+    "label": "PICK"
+  },
+  {
+    "text": "gong ji wolf",
+    "label": "ATTACK"
+  },
+  {
+    "text": "qu temple",
+    "label": "MOVE"
+  },
+  {
+    "text": "na stone",
+    "label": "PICK"
+  },
+  {
+    "text": "atack 狼",
+    "label": "ATTACK"
+  },
+  {
+    "text": "攻機 wolf",
+    "label": "ATTACK"
+  }
+]
