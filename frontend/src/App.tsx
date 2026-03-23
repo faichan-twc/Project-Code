@@ -9,7 +9,7 @@ function GameContent() {
   return (
     <div className="app">
       <header className="app-header">
-        FABLE — 中文 NLP 文字冒險
+        StoryWeaver – An AI-Powered Interactive Fiction System
       </header>
       
       <main className="app-main">
