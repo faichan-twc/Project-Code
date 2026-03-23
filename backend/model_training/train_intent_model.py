@@ -2,6 +2,7 @@
 import json
 import sys
 from pathlib import Path
+from datetime import datetime
 
 # Add parent directory to path so we can import from app
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -18,6 +19,21 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 import numpy as np
 from tqdm import tqdm
+
+
+class Tee:
+    """Write output to multiple streams (console + report file)."""
+    def __init__(self, *streams):
+        self.streams = streams
+
+    def write(self, data):
+        for stream in self.streams:
+            stream.write(data)
+            stream.flush()
+
+    def flush(self):
+        for stream in self.streams:
+            stream.flush()
 
 class IntentDataset(Dataset):
     """意圖分類數據集"""
@@ -237,15 +253,35 @@ class IntentClassifierTrainer:
         print(f"💾 模型已保存到: {output_dir}")
 
 if __name__ == "__main__":
-    # 使用多語言模型
-    trainer = IntentClassifierTrainer(
-        model_name='bert-base-multilingual-cased'  # ⭐
-    )
-    
-    best_acc = trainer.train(
-        epochs=15,        # ⬆️ 增加訓練輪數
-        batch_size=32,    # ⬆️ 較大的批次
-        learning_rate=2e-5,
-        output_dir='../models/intent_classifier'
-    )
-    print(f"\n🎉 訓練完成！最佳驗證準確率: {best_acc:.4f}")
+    output_dir = '../models/intent_classifier'
+    report_path = Path(output_dir) / f"training_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+
+    original_stdout = sys.stdout
+    original_stderr = sys.stderr
+
+    with open(report_path, 'w', encoding='utf-8') as report_file:
+        tee_stream = Tee(original_stdout, report_file)
+        try:
+            # tqdm 預設走 stderr，因此同時重定向 stdout/stderr 才能完整保留訓練輸出
+            sys.stdout = tee_stream
+            sys.stderr = tee_stream
+
+            # 使用多語言模型
+            trainer = IntentClassifierTrainer(
+                model_name='bert-base-multilingual-cased'  # ⭐
+            )
+
+            best_acc = trainer.train(
+                epochs=15,        # ⬆️ 增加訓練輪數
+                batch_size=32,    # ⬆️ 較大的批次
+                learning_rate=2e-5,
+                output_dir=output_dir
+            )
+            print(f"\n🎉 訓練完成！最佳驗證準確率: {best_acc:.4f}")
+            print(f"📝 訓練報告檔案: {report_path.resolve()}")
+        finally:
+            sys.stdout = original_stdout
+            sys.stderr = original_stderr
+
+    print(f"📝 訓練報告已輸出到: {report_path.resolve()}")

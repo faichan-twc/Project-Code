@@ -365,7 +365,7 @@ best_acc = trainer.train(
 ```
 
 **Training Pipeline**:
-1. **Data Loading**: Load enhanced training data (8254 samples)
+1. **Data Loading**: Load enhanced training data (2063 samples)
 2. **Label Mapping**: Create `label2id` and `id2label` dictionaries
 3. **Train-Test Split**: 80/20 with stratification
 4. **Tokenization**: Using BERT tokenizer (max_length=64)
