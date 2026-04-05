@@ -612,6 +612,7 @@ class GameEngine:
             dmg = self.rng(action["dmg"][0], action["dmg"][1])
             e_crit_mul = 1 + 0.25 * (enemy.buffs.critUp or 0)
             dmg = round(dmg * e_crit_mul)
+            dmg += enemy.buffs.atkUp or 0
             
             if state.player.defending:
                 dmg = round(dmg * 0.5)
@@ -1386,6 +1387,10 @@ class GameEngine:
             else:
                 messages.append(f"🔍 你仔細觀察{obj}，但沒有特別發現。")
             
+            # Trigger quest event BEFORE giving items so sequential objectives
+            # (e.g. OBSERVE then COLLECT_ITEM) are marked in the correct order
+            self._trigger_quest_events(state, "onObserve", target=obj)
+            
             # Give items if specified
             if "give_item" in clue_data:
                 items_to_give = clue_data["give_item"]
@@ -1397,9 +1402,6 @@ class GameEngine:
                 
                 # Remove give_item after use to prevent duplicates
                 del clues[obj]["give_item"]
-            
-            # Trigger quest event
-            self._trigger_quest_events(state, "onObserve", target=obj)
             
             return messages
         

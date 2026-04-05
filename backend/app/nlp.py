@@ -683,16 +683,27 @@ class ChineseNLP:
         _candidates = []
         # ========== 策略 2: 英文名稱映射 ==========
         # 使用 en_to_cn 字典
-        for word in text.split():
+        words = text_lower.split()
+        
+        # 優先嘗試多詞組合（bigram、trigram），避免「palace」單詞歧義
+        for n in range(len(words), 0, -1):
+            for i in range(len(words) - n + 1):
+                phrase = " ".join(words[i:i + n])
+                if phrase in self.data.en_to_cn:
+                    cn_name = self.data.en_to_cn[phrase]
+                    if cn_name in candidates:
+                        print(f"✅ [{entity_type}] 英文映射(片語): '{phrase}' → '{cn_name}'")
+                        return cn_name
+        
+        for word in words:
             word_lower = word.lower()
             
-            # 直接字典查找
+            # 直接字典查找（單詞）
             if word_lower in self.data.en_to_cn:
                 cn_name = self.data.en_to_cn[word_lower]
                 if cn_name in candidates:
                     print(f"✅ [{entity_type}] 英文映射: '{word}' → '{cn_name}'")
                     return cn_name
-            
             
             # 檢查遊戲數據中的 en_name 字段
             for candidate in candidates:

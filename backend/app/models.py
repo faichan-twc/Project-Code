@@ -22,6 +22,7 @@ class Buff(BaseModel):
     critUp: int = 0
     evasion: float = 0.0
     enrage: bool = False
+    atkUp: int = 0       # Increases attack damage
     # Debuffs
     poison: int = 0      # Deals damage over time
     slow: int = 0        # Reduces attack damage
